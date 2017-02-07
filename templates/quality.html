@@ -46,27 +46,55 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
 	<h1>Quality: About This Data Set</h1>
-        <p>Write a brief summary about the quality of the data set here</a></p>
+        <p>WThis is a very robust dataset. Due to the duration and the depth of the study, 
+        there are hundreds of variables and thousands of entries per variable. A thorough reading of the data dictionary is 
+        necessary to understand the variables and their values. However, for these same reasons, the data is of very high quality. 
+        In order to maintain such a detailed data management process, 
+        the rigor of its collection and organization is obvious when looking at the data.</a></p>
       </div>
-
+      
+      <div class="page-header">
+	<h2>What does the data look like?</h2>
+	<p>All of the data is coded. In order to do any analysis, 
+	the variables must be converted into something meaningful.
+	<br> <br>
+	<img src="images/raw.jpg" alt="Raw Data" style="width:304px;height:228px;">
+	</p>
+      </div>
     
       <div class="page-header">
 	<h2>Is the data complete?</h2>
-	<p>If not, what is missing and what concerns does it raise?
-	What is your evidence for this?</p>
+	<p>Considering that the data was collected entirely through surveys, it is surprisingly complete. 
+	There are 5 values to represent missing data: -1 = refused to answer, -2 = did not know, -3 = invalid skip (missing data), 
+	-4 = valid Skip (acceptable reason for not answering), -5 = did not complete the interview.
+All other values, be they categorical, continuous or otherwise, are accounted for in the data set.
+</p>
       </div>
       
       <div class="page-header">
 	<h2>Is the data coherent?</h2>
-	<p>Does it make sense relative to itself? Does it match your
-	expectations? Are the distributions sensible? What is your
-	evidence for this?</p>
+	<p>One of the intentions of the survey is to create a large enough dataset to be representative the entire U.S. population. 
+	Therefore, coherence is particularly important. The breakdown of Gender and Race/Ethnicity appear to mimic the actual 
+	makeup of the U.S. This is just one example of a basic distribution. To look at more specific outcomes, 
+	say education or incarceration, more detailed distributions would be more insightful.
+	<br> <br>
+	<img src="images/Race_gender.jpg" alt="Race_gender"style="width:304px;height:228px;">
+	
+	<br> <br>
+	Additionally, for participants who earn more than $100,000, their annual income has been coded as only $140,000. 
+	Meaning a participant with an income of $200,000 and a participant with an income of $100,000 are both represented as 
+	having an income of $140,000 in the dataset. This is likely for the purposes of privacy (not being able to identify 
+	participants since so few people make that much). 
+	It does, however, present a challenge when working with income calculations.
+	</p>
       </div>
 
       <div class="page-header">
 	<h2>Is the data correct?</h2>
-	<p>What aspects of this data can you verify? How did you do so? What did
-	you find?</p>
+	<p>The correctness of the data is difficult to verify since it is survey data. The Bureau of Labor and Statistics invested a 
+	great deal of time, money and effort into the design and execution of this study and created structures to account for many
+	potential answers the survey participants may give. Ultimately, 
+	however, the data is only as good as the responses of the participants.</p>
       </div>
 
     </div> <!-- /container -->
